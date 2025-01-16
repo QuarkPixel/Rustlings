@@ -13,10 +13,16 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+use std::cmp::Ordering;
+fn calculate_price_of_apples(count: usize) -> usize {
+    let price = match count {
+        0..=40 => 2,
+        40.. => 1
+    };
+
+    count * price
+}
 
 // Don't modify this function!
 #[test]
